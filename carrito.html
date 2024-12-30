@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Criptomonedas</title>
+  <link rel="stylesheet" href="css/carrito.css">
+  <script defer src="js/carrito.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Carrito de Criptomonedas</h1>
+    <a href="./index.html.html">Volver al Inicio</a>
+  </header>
+  <main>
+    <div id="criptomonedas-container">
+      <h2 id="titulo-lista">Lista de Criptomonedas</h2>
+    </div>
+    </div>
+    
+    <div id="criptomonedas">
+    
+    <div class="card">
+      <img src="imagenes/bitcoin.png" alt="Bitcoin">
+      <h3>Bitcoin</h3>
+      <p>Precio: <span id="precio-bitcoin">$99000</span></p>
+      <button class="btn-info" onclick="mostrarInfo(1)">+ Info</button>
+      <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <img src="imagenes/ethereum.png" alt="Ethereum">
+      <h3>Ethereum</h3>
+      <p>Precio: <span id="precio-ethereum">$1900</span></p>
+      <button class="eth-info" onclick="mostrarInfo(2)">+ Info</button>
+      <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <img src="imagenes/binance.png" alt="Binance Coin">
+      <h3>Binance Coin</h3>
+      <p>Precio: <span id="precio-binancecoin">$300</span></p>
+      <button class="eth-info" onclick="mostrarInfo(3)">+ Info</button>
+      <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <img src="imagenes/solana.png" alt="Solana">
+      <h3>Solana</h3>
+      <p>Precio: <span id="precio-solana">$150</span></p>
+      <button class="eth-info" onclick="mostrarInfo(4)">+ Info</button>
+      <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <img src="imagenes/xrp.png" alt="XRP">
+      <h3>XRP</h3>
+      <p>Precio: <span id="precio-xrp">$2.50</span></p>
+      <button class="eth-info" onclick="mostrarInfo(5)">+ Info</button>
+      <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+    </div>
+      <div class="card">
+      <img src="imagenes/tether.png" alt="Tether">
+      <h3>Theter</h3>
+      <p>Precio: <span id="precio-tether">$0.99</span></p>
+      <button class="eth-info" onclick="mostrarInfo(6)">+ Info</button>
+      <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+  
+    </section>
+    
+    <section id="carrito">
+        <h2>Carrito de Deseados</h2>
+        <ul id="listaDeseados">
+            <!-- Las criptomonedas añadidas al carrito aparecerán aquí -->
+        </ul>
+        <button onclick="eliminarPedidos()">Vaciar Carrito</button>
+    </section>
+      <!-- Aquí se generarán dinámicamente las cards de criptomonedas -->
+    </section>
+    <section id="listaDeseados">
+      <h2>Lista de Deseados</h2>
+      <!-- Aquí se mostrarán los productos almacenados en LocalStorage -->
+    </section>
+  </main>
+  <footer>
+    <p>Proyecto creado por Mauro Dominguez</p>
+  <div class="social-links">
+      <a href="https://facebook.com" target="_blank">
+          <img src="imagenes/facebook.jpg" alt="Facebook" width="30">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="imagenes/twitter.jpg" alt="Twitter" width="30">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+          <img src="imagenes/instagram.jpg" alt="Instagram" width="30">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+          <img src="imagenes/linkedin.jpg" alt="LinkedIn" width="30">
+      </a>
+  </div>
+</footer>
+</body>
+</html>

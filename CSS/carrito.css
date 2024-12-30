@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-size: clamp(1rem, 3vw, 2rem);
+  background-image: url('/imagenes/fondo.jpg'); /* imagen de fondo */
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: fixed;
+  color: rgb(46, 44, 44);
+  box-sizing: border-box;
+}
+  
+  header {
+    background-color: rgba(100, 148, 237, 0.582);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .card-container {
+    display: flex; /* Activa Flexbox para organizar horizontalmente */
+    flex-direction: row; /* Asegura disposición horizontal */
+    gap: 20px; /* Espaciado entre las cards */
+    justify-content: center; /* Centra horizontalmente las cards */
+    align-items: stretch; /* Mantiene la altura uniforme */
+    padding: 20px; /* Espaciado interno alrededor del contenedor */
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%; /* Ajusta el ancho al tamaño de la card */
+  height: auto; /* Mantiene las proporciones */
+  margin-bottom: 15px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Levanta la card */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Botón ligeramente más grande */
+}
+
+.btn-info {
+  background-color: #6c757d; /* Botón gris */
+}
+
+.btn-info:hover {
+  background-color: #5a6268;
+}
+
+#criptomonedas-container {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px;
+}
+
+#titulo-lista {
+  font-size: 2rem; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 20px; /* Espaciado entre el título y las cards */
+  color: #333; /* Color del texto */
+}
+
+#criptomonedas {
+  display: flex; /* Alinea las cards horizontalmente */
+  flex-wrap: wrap; /* Permite que las cards se envuelvan si no caben en la misma línea */
+  justify-content: flex-start; /* Alinea las cards a la izquierda */
+  gap: 20px; /* Espaciado entre las cards */
+  padding: 20px; /* Margen interno alrededor del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+  
+#carrito {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+#carrito ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#carrito button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#carrito button:hover {
+  background-color: #eb6810;
+}
+
+#precio-bitcoin, #precio-ethereum, #precio-binancecoin, #precio-solana, #precio-xrp, #precio-tether {
+  font-weight: bold;
+  color: #2ecc71;
+  transition: color 0.3s ease;
+}
+
+#precio-bitcoin.loading, #precio-ethereum.loading, #precio-binancecoin.loading, #precio-solana.loading, #precio-xrp.loading, #precio-tether.loading {
+  color: #e74c3c;
+}
+
+
+  
+  #listaDeseados {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #listaDeseados li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  footer {
+    border: 1px solid blue;
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2);
+}
+
+  /* Medias Queries */ 
+
+  @media (max-width: 768px) {
+    .card img {
+        width: 80%; /* Reduce el ancho en pantallas más pequeñas */
+        margin: 0 auto; /* Centra la imagen dentro de la card */
+    }
+}
+  

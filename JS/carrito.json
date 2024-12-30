@@ -1,0 +1,36 @@
+{
+  "id" : 1,
+  "name" : "Bitcoin",
+  "price" : 00.00,
+  "description" : "Aca va la descripción ampliada"
+},
+{
+  "id" : 2,
+  "name" : "Ethereum",
+  "price" : 00.00,
+  "description" : "Esta es una descripción extensa del producto"
+},
+{
+  "id" : 3,
+  "name" : "Binance Coin",
+  "price" : 00.00,
+  "description" : "Esta es una descripción extensa del producto"
+},
+{
+  "id": 4,
+  "name": "Solana",
+  "price": 000.00,
+  "description": "Solana es una criptomoneda rápida y escalable."
+},
+{
+  "id": 5,
+  "name": "XRP",
+  "price": 000.00,
+  "description": "XRP es una criptomoneda rápida y escalable."
+}
+{
+  "id": 6,
+  "name": "Tether",
+  "price": 000.00,
+  "description": "Theter es una criptomoneda rápida y escalable."
+},
